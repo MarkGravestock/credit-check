@@ -15,7 +15,7 @@ Contract.make {
                 the credit check will fail
             """)
         method 'GET'
-        url '/credit-check/Mark G'
+        url '/credit-check/Mark'
         headers {
             contentType textPlain()
         }

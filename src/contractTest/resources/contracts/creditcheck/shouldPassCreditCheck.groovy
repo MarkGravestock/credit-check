@@ -15,7 +15,7 @@ then:
 	the credit check will pass
 """)
             method 'GET'
-            url '/credit-check/Brad P'
+            url '/credit-check/Brad'
             headers {
                 contentType textPlain()
             }

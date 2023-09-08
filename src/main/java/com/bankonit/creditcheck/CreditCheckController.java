@@ -10,10 +10,7 @@ public class CreditCheckController {
 
     @GetMapping("/credit-check/{fullName}")
     ResponseEntity<String> getLoanApplication(@PathVariable("fullName") String fullName) {
-        var status = switch (fullName) {
-            case "Mark G" -> "BAD";
-            default -> "GOOD";
-        };
+        var status = fullName.equalsIgnoreCase("Mark") ? "BAD" : "GOOD";
 
         return ok(status);
     }
