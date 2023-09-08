@@ -3,7 +3,8 @@ package contracts.creditcheck
 import org.springframework.cloud.contract.spec.Contract
 
 Contract.make {
-        request {
+    name("credit_check_fail")
+    request {
             description("""
 Represents a successful credit check
 
