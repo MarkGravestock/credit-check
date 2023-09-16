@@ -53,5 +53,11 @@ publishing {
             artifact verifierStubsJar
         }
     }
+
+    repositories {
+        maven {
+            url = "https://maven.pkg.github.com/MarkGravestock/credit-check"
+        }
+    }
 }
 
