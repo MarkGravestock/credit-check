@@ -56,11 +56,11 @@ publishing {
 
     repositories {
         maven {
-            name = "GitHub"
+            name = "GitHubPackages"
             url = "https://maven.pkg.github.com/MarkGravestock/credit-check"
             credentials {
-                username = findProperty("github.username")
-                password = findProperty("github.token")
+                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
             }
         }
     }
