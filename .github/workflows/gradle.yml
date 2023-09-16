@@ -35,4 +35,4 @@ jobs:
         USERNAME: 'BuildAgent'
         TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        arguments: clean publish
+        arguments: clean publishMavenJavaPublicationToGitHubPackagesRepository
