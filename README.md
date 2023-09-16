@@ -2,4 +2,4 @@
 
 Code sample project
 
-See [Presentation](/docs/ContractTesting.pdf) for details
+See [loan-service](https://github.com/MarkGravestock/loan-service) project for details
